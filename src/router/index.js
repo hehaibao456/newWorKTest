@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory} from "vue-router";  //,createWebHistory
 import routes from "./routes.js";
 import { useAuthStore } from "../store/auth.store.js";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),//createWebHistory(),
   routes,
   scrollBehavior() {
     return { left: 0, top: 0 };
