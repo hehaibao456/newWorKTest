@@ -1,0 +1,35 @@
+@keyframes scanlines {
+  0% { transform: translateY(-40%); opacity: .0; }
+  15% { opacity: .35; }
+  50% { opacity: .18; }
+  100% { transform: translateY(140%); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--accent-rgb),.0); }
+  50% { box-shadow: 0 0 0 6px rgba(var(--accent-rgb),.08); }
+}
+
+.scanlines{
+  position:absolute;
+  inset:-40% 0 0 0;
+  pointer-events:none;
+  background: linear-gradient(180deg,
+    transparent,
+    rgba(var(--accent-rgb),.12),
+    transparent);
+  mix-blend-mode: screen;
+  animation: scanlines 3.2s linear infinite;
+}
+
+.pulse{
+  animation: pulseGlow 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .scanlines,
+  .pulse,
+  .scan{
+    animation: none !important;
+  }
+}

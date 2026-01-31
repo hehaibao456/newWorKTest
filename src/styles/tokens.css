@@ -1,0 +1,50 @@
+:root{
+  --bg0:#F7FBF8;
+  --bg1:#E6F2EE;
+  --panel:#FFFFFF;
+  --panel2:#EDF7F3;
+
+  --line:#C7DCD4;
+  --line2:#A8C4BA;
+
+  --text:#1F2B28;
+  --muted:#5D746C;
+
+  --cyan:#1F8E8C;
+  --cyan2:#166C6B;
+  --accent: var(--cyan);
+  --accent2: var(--cyan2);
+
+  --warn:#C9872D;
+  --danger:#C4544A;
+  --ok:#2C9B6D;
+
+  --bg0-rgb: 247,251,248;
+  --bg1-rgb: 230,242,238;
+  --panel-rgb: 255,255,255;
+  --panel2-rgb: 237,247,243;
+  --line-rgb: 199,220,212;
+  --line2-rgb: 168,196,186;
+  --text-rgb: 31,43,40;
+  --muted-rgb: 93,116,108;
+  --accent-rgb: 31,142,140;
+  --warn-rgb: 201,135,45;
+  --danger-rgb: 196,84,74;
+  --ok-rgb: 44,155,109;
+
+  --s-border: rgba(var(--line2-rgb), .65);
+  --s-bg-soft: rgba(var(--panel-rgb), .7);
+
+  --shadow: 0 18px 40px rgba(31,43,40,.12);
+  --radius: 14px;
+
+  --font: "IBM Plex Sans", "Barlow Condensed", "PingFang SC","Microsoft YaHei","Noto Sans CJK SC", "Segoe UI", Arial, sans-serif;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --space-2: 8px;
+  --space-3: 10px;
+  --space-4: 12px;
+  --space-5: 14px;
+  --space-6: 16px;
+}
