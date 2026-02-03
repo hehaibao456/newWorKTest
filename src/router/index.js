@@ -13,12 +13,9 @@ const router = createRouter({
 router.beforeEach((to) => {
   const auth = useAuthStore();
   const isAuthRoute = to.path.startsWith("/auth");
-  if (!isAuthRoute && !auth.isAuthed) {
-    return "/auth/login";
-  }
-  if (isAuthRoute && auth.isAuthed) {
-    return "/app/command";
-  }
+  if (!isAuthRoute && !auth.isAuthed) return "/auth/login";
+
+  if (isAuthRoute && auth.isAuthed) return "/app/command";
 });
 
 export default router;
