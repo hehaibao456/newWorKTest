@@ -6,6 +6,6 @@ import router from "./router/index.js";
 import "./styles/tokens.css";
 import "./styles/global.css";
 import "./styles/sci-fi.css";
-import "./styles/animations.css";
+import "./styles/animations.css";  //sdfsd
 
 createApp(App).use(createPinia()).use(router).mount("#app");

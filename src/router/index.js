@@ -16,12 +16,6 @@ router.beforeEach((to) => {
   if (!isAuthRoute && !auth.isAuthed) return "/auth/login";
 
   if (isAuthRoute && auth.isAuthed) return "/app/command";
-  // if (!isAuthRoute && !auth.isAuthed) {
-  //   return "/auth/login";
-  // }
-  // if (isAuthRoute && auth.isAuthed) {
-  //   return "/app/command";
-  // }
 });
 
 export default router;
